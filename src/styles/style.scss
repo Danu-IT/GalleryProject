@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gallery{
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        color: red;
+        align-self: center;
+    }
+    &__cardsContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+    }
+    &__card{
+        width: 301px;
+        height: 200px;
+        border: 1px solid gray;
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__cardImage{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
